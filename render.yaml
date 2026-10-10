@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nexus-command
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 4 server:app
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: 8000
