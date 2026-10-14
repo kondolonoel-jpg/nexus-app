@@ -62,6 +62,9 @@ python3 server.py          # http://0.0.0.0:8000
 ## 🌍 Hébergement en ligne
 Voir **`HEBERGEMENT.md`** : guide pas à pas pour Render.com (gratuit), ngrok/Cloudflare Tunnel (depuis votre PC), VPS Ubuntu + Nginx + HTTPS, ou Docker. Fichiers fournis : `requirements.txt`, `Procfile`, `render.yaml`, `Dockerfile`.
 
+## Indicateur MetaTrader 5
+Le code MQL5 de l'indicateur **Accurate Trend Indicator** se trouve dans `MQL5/Indicators/AccurateTrendIndicator.mq5`. Il affiche des bougies colorées et des étiquettes BUY/SELL, avec alertes texte, son et push mobile déclenchées en temps réel. Installation, paramètres et configuration du push : voir `MQL5/README.md`.
+
 ## Fichiers
 - `server.py` — backend complet (auth, news, analyse IA)
 - `static/index.html` — dashboard NEXUS V4 (build du fichier d'origine patché)
